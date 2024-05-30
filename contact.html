@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+  body{
+
+    background-color:#393A3C ;
+}
+header nav{
+  
+  
+  display:flex;
+  
+}
+
+header nav a{
+  font-size:25px;
+  margin:0px 20px 0px 30px ;
+  text-decoration:none;
+  color:#7C7D80 ;
+}
+
+
+header nav a:hover{
+  color:#EEF0F3 ;
+  transition-duration:1.5s;
+}
+.container_header{
+  margin-top:200px;
+  display:flex;
+}
+
+footer{
+height:40px;
+position: fixed;
+  texg-align:center;
+   bottom: 0;
+  left:0;
+   width: 100%;
+ padding:none;
+   color: white;
+
+  background-color:#29292B  ;
+
+}
+
+.container_center{
+  display:flex;
+  margin:100px 0px 0px 500px;
+  height:800px;
+  width:600px;
+    background-color:#333A45  ;
+  border-radius:10px;
+  color:#D59D1E;
+  font-size:30px;
+  
+}
+
+ .form-group {
+        margin: 20px 20px 20px 0px;
+      }
+      .form-group label {
+        display: block;
+        margin-left: 20px;
+      }
+      .form-group input, .form-group select {
+        height: 30px;
+        margin: 10px 0 0 30px;
+        border-radius: 10px;
+        width: 400px;}
+ .textarea textarea {
+      height: 200px;
+   border-radius:10px;
+   width:400px;
+   margin-top:20px;
+    }
+
+.textarea{
+  margin-left:20px;
+}
+.button_contact_me{
+  margin-top:20px;
+  border:5px solid #D59D1E ;
+  border-radius:10px;
+  padding:15px;
+  width:200px;
+  background:none;
+  font-size:25px;
+}
+.button_contact_me:hover{
+  box-shadow:10px 5px 5px #040300 ;
+ transition-duration:1.5s;
+}
+.button_contact_me a{
+  text-decoration:none;
+  color:#D59D1E;
+  
+}
+
+</style>
+  <script type="text/javascript">
+    function Message() {
+  window.alert("Message was send");
+  }
+  
+</script>
+  <head>
+  
+    <header>
+      <nav >
+        <a style="margin-left:650px; margin-top:40px;" href="index.html">About</a>
+        <a  style=" margin-top:40px;" href="portfolio.html">Portfolio</a>
+        <a  style=" margin-top:40px;"  href="contact.html">Contact</a>
+      </nav>
+      
+      
+    </header>
+  
+  </head>
+  <body>
+<div class="container_center">
+  <div style="">
+  
+  <div style="margin:20px;">
+  <label>First Name</label>
+    <input type="text" style="height:30px;margin: 40px 0px 0px 30px;border-radius:10px;width:300px;" placeholder="Write your name"></input>
+
+    </div>
+    
+    
+    <div style="margin:20px;">
+  <label>Last Name</label>
+    <input type="text" style="height:30px;margin: 40px 0px 0px 30px;border-radius:10px;width:300px;" placeholder="Write your last name"></input>
+
+    </div>
+     <div class="form-group">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="uk">United Kingdom</option>
+          <option value="ukraine">Ukraine</option>
+          <option value="uganda">Uganda</option>
+          <option value="kuba">Kuba</option>
+        </select>
+      </div>
+    
+    <div class="textarea">
+      <label for="subject">Subject</label></br>
+      <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+              <button class="button_contact_me"  onclick="Message()"><a href ="#">Contact Me</a></button>
+    </div>
+
+
+    
+    </div>
+
+  </body>
+
+  <footer>
+
+     
+
+    
+    <p style="text-align:center;font-size:20px;">@2024 Portfolio, All rights reserved</p>
+       
+     
+  
+  </footer>
+
+</html>

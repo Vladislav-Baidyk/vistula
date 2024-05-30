@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+  body{
+  background-color:#333A45  ;
+}
+header nav{
+  
+  
+  display:flex;
+  
+}
+header {
+  height:850px;
+  background-color:#393A3C ;
+
+}
+header nav a{
+  font-size:25px;
+  margin:0px 20px 0px 30px ;
+  text-decoration:none;
+  color:#7C7D80 ;
+}
+
+
+header nav a:hover{
+  color:#EEF0F3 ;
+  transition-duration:1.5s;
+}
+
+footer{
+position: fixed;
+   bottom: 0;
+   width: 100%;
+ padding:none;
+   color: white;
+  background-color:#29292B  ;
+
+}
+.container_portfolio{
+  color:#D59D1E;
+  display:flex;
+
+  margin-top:50px;
+}
+
+.example_site{
+  margin:150px;
+  position:relative;
+  height:300px;
+  width:300px;
+ 
+}
+.img_example{
+border-radius:20px;
+  height:300px;
+  width:520px;
+  
+}
+.but_read_left{
+  position: absolute;
+  top: 80%;
+  left: 0%;
+  font-size:30px;
+  margin-top:20px;
+  width:520px;
+  border-radius:0px 0px 10px 10px;
+   background-color: rgba(41, 41, 43, 0.9);
+  color:#D59D1E;
+  
+}
+.but_read_left:hover{
+  height:100px;
+  top:60%;
+   background-color: rgba(41, 41,43, 1);
+}
+#text_site1{
+    color: #D59D1E;
+  text-align: center;
+  height: 500px;
+  width: 500px;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #29292B;
+  display: block;
+  border-radius:20px;
+}
+#text_site2{
+    color: #D59D1E;
+  text-align: center;
+  height: 500px;
+  width: 500px;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #29292B;
+  display: block;
+  border-radius:20px;
+}
+</style>
+<script>
+
+function ReadMore() {
+  document.getElementById("text_site1").style.display = "block";
+}
+function Exit() {
+  document.getElementById("text_site1").style.display = "none";
+}
+function ReadMore2() {
+  document.getElementById("text_site2").style.display = "block";
+}
+function Exit2() {
+  document.getElementById("text_site2").style.display = "none";
+}
+
+</script>
+  <head>
+  
+    <header>
+      <nav >
+        <a style="margin-left:650px; margin-top:40px;" href="index.html">About</a>
+        <a  style=" margin-top:40px;" href="portfolio.html">Portfolio</a>
+        <a  style=" margin-top:40px;"  href="contact.html">Contact</a>
+      </nav>
+     
+  </head>
+  <body>
+     <h1 style="color:#D59D1E;margin-top:100px;margin-left:700px;">My portfolio</h1>
+    <div class="container_portfolio">
+     
+      <div class="example_site">
+        <img class="img_example" src="portfolio_site1.jpg">
+        <button class="but_read_left" onclick="ReadMore()">Read More</button>
+      </div>
+
+ <div class="example_site">
+        <img class="img_example" src="portfolio_site2.jpg">
+        <button class="but_read_left" onclick="ReadMore2()">Read More</button>
+      </div>
+
+
+    </div>
+  
+  </body>
+  <footer>
+
+     
+
+    
+    <p style="text-align:center;">@2024 Portfolio, All rights reserved</p>
+       
+     
+  
+  </footer>
+     <div style="display:none;" id="text_site1" >
+       <button style="margin-left:455px;background-color: #D59D1E;border:none;border-radius:0px 10px 0px 0px;height:40px;width:40px;" onclick="Exit()">X</button>
+       <h1>General info: The idea of this site is that you can listen music</h1>
+       <p>Programs and language which I used: </br> Visual Studio Code as program and Html & Css</p>
+         <p>Url : <a style="text-decoration: none; color:#D59D1E;" href = "site1.html ">Click here</a></p>
+    
+       
+    </div>
+    <div style="display:none;" id="text_site2" >
+       <button style="margin-left:455px;background-color: #D59D1E;border:none;border-radius:0px 10px 0px 0px;height:40px;width:40px;" onclick="Exit2()">X</button>
+       <h1>General info: This is a site about Tarantino films</h1>
+       <p>Programs and language which I used:</br> Visual Studio Code as program and Html & Css</p>
+       <p>Url : <a style="text-decoration: none; color:#D59D1E;" href = "site2.html "> Click here</a></p>
+     
+       
+    </div>
+</html>

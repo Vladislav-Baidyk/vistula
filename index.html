@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+	body{
+  background-color:#333A45  ;
+}
+header nav{
+  
+  
+  display:flex;
+  
+}
+header {
+  height:850px;
+  background-color:#393A3C ;
+
+}
+header nav a{
+  font-size:25px;
+  margin:0px 20px 0px 30px ;
+  text-decoration:none;
+  color:#7C7D80 ;
+}
+
+
+header nav a:hover{
+  color:#EEF0F3 ;
+  transition-duration:1.5s;
+}
+.container_header{
+  margin-top:200px;
+  display:flex;
+}
+.header_text{
+  margin:0px 0px 0px 200px;
+    color:#EEF0F3 ;
+  font-size:35px;
+}
+.button_contact_me{
+  margin:100px 0px 0px 0px;
+  border:5px solid #D59D1E ;
+  border-radius:10px;
+  padding:15px;
+  width:200px;
+  background:none;
+  font-size:25px;
+}
+.header_text_span{
+  color:#D59D1E;
+  font-size:50px;
+  position:relative;
+}
+.header_text_span::after{
+  content:"";
+  position:absolute;
+  bottom:-2px;
+  left:0;
+  width:0px;
+  height:2px;
+  background-color:#D59D1E;
+   transition-duration:1.5s;
+}
+.header_text_span:hover::after{
+  width:350px;
+}
+.button_contact_me:hover{
+  box-shadow:10px 5px 5px #040300 ;
+ transition-duration:1.5s;
+}
+.button_contact_me a{
+  text-decoration:none;
+  color:#D59D1E;
+  
+}
+.header_img{
+  margin-left:100px;
+  
+}
+.img_header{
+ border-radius: 10px;
+}
+.container{
+  display:flex;
+  margin-left:120px;
+}
+.box{
+  margin:30px;
+  height:300px;
+  width:300px;
+background-color:#3B3A37   ;
+  text-align:center;
+ color:#EEF0F3 ;
+  font-size:25px;
+  border-radius:10px;
+}
+.button_drop_footer{
+    position: fixed;
+    top:300px;
+    right:100px;
+}
+.partners{
+  display:flex;
+  
+}
+.img_header{
+	margin-left:100px;
+height: 300px;
+width:300px;
+}
+footer{
+
+position: fixed;
+  
+   bottom: 0;
+   width: 100%;
+ padding:none;
+   color: white;
+
+  background-color:#29292B  ;
+
+}
+
+</style>
+  <head>
+  
+    <header>
+      <nav >
+        <a style="margin-left:650px; margin-top:40px;" href="index.html">About</a>
+        <a  style=" margin-top:40px;" href="portfolio.html">Portfolio</a>
+        <a  style=" margin-top:40px;"  href="contact.html">Contact</a>
+      </nav>
+      <div class="container_header">
+        <div class="header_text">
+          I'm  <span class="header_text_span" > Vladyslav Baidyk </span><br>
+ Front-end
+          developer</br>
+          <button class="button_contact_me"><a href ="contact.html">Contact Me</a></button>
+        </div>
+        <div class="header_img">
+          <img class="img_header"src="land_page.jpeg">
+        </div>
+      
+    </header>
+    </div>
+  </head>
+  <body>
+
+    <div style="margin-bottom: 100px" class="container_skills">
+
+      <h1 style="margin-left:700px;color:#EEF0F3 ;font-size:50px;">My skills</h1>
+      <div class="container ">  
+        <div class="box">
+          <img style="height:150px;margin-top:40px;" src="https://cdn.worldvectorlogo.com/logos/css-3.svg">
+          <p>Css</p>
+        </div>
+      
+        <div class="box">
+          <img style="height:150px;margin-top:40px;" src="https://seeklogo.com/images/H/html5-without-wordmark-color-logo-14D252D878-seeklogo.com.png">
+          <p>Html</p>
+        </div>
+       
+        <div class="box">
+          <img style="height:150px;margin-top:40px;" src="https://static.vecteezy.com/system/resources/previews/027/127/463/original/javascript-logo-javascript-icon-transparent-free-png.png">
+          <p>Java Script</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer>
+
+     
+
+    
+    <p style="text-align:center;">@2024 Portfolio, All rights reserved</p>
+       
+     
+  
+  </footer>
+</html>

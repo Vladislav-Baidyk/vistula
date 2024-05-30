@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+  html, body {
+  height: 100%;
+  margin: 0;
+    background-color:#1C1C1B  ;
+}
+
+.split_body {
+  display: flex;
+  height: 100%;
+}
+
+.left_part {
+  width: 20%;
+  background-color:#0C0C0B ;
+  padding: 20px;
+  height: 100%;
+  color: #fff;
+  position:fixed;
+}
+
+.header_left_part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.icon_text i {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+.icon_text:hover{
+  color:#D5C501 ;
+}
+.right_part{
+    width:100%;
+}
+
+.right_part_header{
+ display:flex;
+  background-color:#080808   ;
+  width:100%;
+  
+}
+.p_right_head{
+  font-size:20px;
+  margin:30px;
+  color:#fff;
+}
+.p_right_head:hover{
+  color:#D5C501;
+transition-duration: 2s;
+}
+.log_in{
+  color:black;
+    font-size:20px;
+  margin:20px;
+  background-color:#fff;
+  border-radius:10px;padding:10px;
+  width:150px;
+  text-align:center;
+  
+}
+.log_in:hover{
+  color:#fff;
+  background-color:#000;
+  transition-duration: 2s;
+}
+.content_right_side{
+  color:#fff;
+  height:100%;
+  margin-left:400px;
+}
+.first_row{
+  display:flex;
+}
+.box{
+  width:250px;
+  height:340px;
+   
+  background-color:#141414  ;
+  margin-left:40px;
+  text-align:center;
+}
+.img_box{
+  margin-top:10px;
+  height:230px;
+  width:230px;
+}
+</style>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Icon Column Layout</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="split_body">
+    <div class="left_part">
+      <nav>
+        <div class="header_left_part">
+          <div class="icon_text">
+            <i class="fa fa-home"></i>
+            <p>Home</p>
+          </div>
+          <div class="icon_text">
+            <i class="fa fa-search"></i>
+            <p>Search</p>
+          </div>
+          <div class="icon_text">
+            <i class="fa fa-book"></i>
+            <p>Your Library</p>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="right_part">
+      <div class="right_part_header">
+        <p class="p_right_head" style="margin-left:550px;">PREMIUM</p>
+        <p  class="p_right_head" >SUPPORT</p>
+        <p  class="p_right_head" >DOWNLOAD</p>
+        <div style="height:50px;border:1px solid #fff;margin:20px;"></div>
+        <p  class="p_right_head" >SING UP</p>
+        <p class="log_in">LOG IN</p>
+      </div>
+      
+      
+      <div class="content_right_side">
+        <p style="margin-left:30px;font-size:30px;">The state of music today</p>
+        <div class="first_row">
+          
+          
+          <div class="box">
+            <img  class="img_box" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtBgcOGhqRP09rqW-rGEBozL7csdTUP9DS5doGwS57tg&s">
+            <p style="font-size:20px;">Beggin</p>
+            <p>Madcon</p>
+            
+          </div>
+          
+            <div class="box">
+            <img  class="img_box" src="https://www.nme.com/wp-content/uploads/2017/08/kanye-stronger.png">
+            <p style="font-size:20px;">Beggin</p>
+            <p>Kanye West</p>
+            
+          </div>
+          
+          
+            <div class="box">
+            <img  class="img_box" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSXMBZUzANaFO_nacApEZebQxmSDGr3zhBzDX5IPCr5w&s">
+            <p style="font-size:20px;">Everyday Normal Guy 2</p>
+            <p>
+
+Jon Lajoie
+</p>
+            
+          </div>
+          
+          
+            <div class="box">
+            <img  class="img_box" src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c6/Sex_bomb_%28Tom_Jones%29.jpg/220px-Sex_bomb_%28Tom_Jones%29.jpg">
+            <p style="font-size:20px;">Sexbomb</p>
+            <p>Tom Jones & Mousse T</p>
+            
+          </div>
+          
+      
+          
+          
+        </div>
+      </div>
+      
+      
+    </div>
+  </div>
+</body>
+</html>
